@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+Cambridge Marketing Concepts - All Rights Reserved
 
-Template Name: Arsha
-Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+This is a prototype website for CMC.
