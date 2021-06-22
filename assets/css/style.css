@@ -1968,7 +1968,7 @@ section {
   padding: 10px 12px;
 }
 
-.hiring .php-email-form button[type="submit"] {
+.hiring .php-email-form button {
   background: var(--light-blue);
   border: 0;
   padding: 12px 34px;
@@ -1977,7 +1977,7 @@ section {
   border-radius: 50px;
 }
 
-.hiring .php-email-form button[type="submit"]:hover {
+.hiring .php-email-form button:hover {
   background: #209dd8;
 }
 
