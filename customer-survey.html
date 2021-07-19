@@ -136,28 +136,29 @@
                             </div>
 
                             <h3>Device Information:</h3><br>
+                            <div id="devices">
+                                <div id="device-info">
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="trade-in-device">Trade-In Device Model & Storage:</label>
+                                            <input type="text" name="trade-in-device" id="trade-in-device"
+                                                class="form-control" required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="trade-in-imei">Trade-In Device IMEI:</label>
+                                            <input type="text" name="trade-in-imei" id="trade-in-imei"
+                                                class="form-control" required>
+                                        </div>
+                                    </div>
 
-                            <div id="device-info">
-                                <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label for="trade-in-device">Trade-In Device Model & Storage:</label>
-                                        <input type="text" name="trade-in-device" id="trade-in-device"
-                                            class="form-control" required>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="new-device">New Device Model & Storage:</label><br>
+                                            <input type="text" name="new-device" id="new-device" class="form-control">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="trade-in-imei">Trade-In Device IMEI:</label>
-                                        <input type="text" name="trade-in-imei" id="trade-in-imei" class="form-control"
-                                            required>
-                                    </div>
+                                    <br>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="new-device">New Device Model & Storage:</label><br>
-                                        <input type="text" name="new-device" id="new-device" class="form-control">
-                                    </div>
-                                </div>
-                                <br>
                             </div>
 
                             <button class="btn add-line-btn" type="button" id="add-line-btn">Add Line</button>
