@@ -1982,6 +1982,19 @@ section {
   border-radius: 50px;
 }
 
+.hiring .php-email-form .add-line-btn {
+  background: var(--light-blue);
+  border: 0;
+  margin-bottom: 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.hiring .php-email-form .add-line-btn:focus{
+  box-shadow: 0 0 0 0;
+}
+
 .hiring .php-email-form button:hover {
   background: #209dd8;
 }

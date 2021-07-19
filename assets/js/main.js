@@ -254,4 +254,30 @@
     });
   });
 
+  /**------------ Form Control */
+  // var addLineBtn = select('#add-line-btn');
+  // addLineBtn.on('click', addLine);
+  // function addLine() {
+  //   
+  // }
+
+  // on('click', '#add-line-btn', function(e) {
+  //   // var new_device_info = <input type='text' name='new-device' id='new-device' class='form-control'>
+  //   var new_input = document.createElement("input");
+  //   var deviceInfo = select('#device-info');
+  //   deviceInfo.appendChild(new_input);
+  //   console.log("done");
+  // })
+
+var i = 0;
+var original = document.getElementById('device-info');
+
+on('click', '#add-line-btn', function duplicate() {
+    console.log("doing it")
+    var clone = original.cloneNode(true); // "deep" clone
+    clone.id = "device-info" + ++i;
+    // or clone.id = ""; if the divs don't need an ID
+    original.appendChild(clone);
+})
+
 })()

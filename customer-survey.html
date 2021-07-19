@@ -30,6 +30,8 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
+
+
 </head>
 
 <body>
@@ -124,36 +126,42 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="number-of-lines">Number of Lines:</label>
-                                    <input type="number" name="number-of-lines" class="form-control" id="number-of-lines" required>
-                                </div>
 
                                 <div class="form-group col-md-6">
                                     <label for="monthly-bill-estimate">Monthly Bill Estimate given by the Sales
                                         Representative:</label><br>
-                                    <input type="number" name="monthly-bill-estimate" id="monthly-bill-estimate" class="form-control">
+                                    <input type="number" name="monthly-bill-estimate" id="monthly-bill-estimate"
+                                        class="form-control">
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="trade-in-phone">Trade-In Phone Model & Storage:</label>
-                                    <input type="text" name="trade-in-phone" id="trade-in-phone" class="form-control" required>
+                            <h3>Device Information:</h3><br>
+
+                            <div id="device-info">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="trade-in-device">Trade-In Device Model & Storage:</label>
+                                        <input type="text" name="trade-in-device" id="trade-in-device"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="trade-in-imei">Trade-In Device IMEI:</label>
+                                        <input type="text" name="trade-in-imei" id="trade-in-imei" class="form-control"
+                                            required>
+                                    </div>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="trade-in-imei">Trade-In Phone IMEI:</label>
-                                    <input type="text" name="trade-in-imei" id="trade-in-imei" class="form-control" required>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="new-device">New Device Model & Storage:</label><br>
+                                        <input type="text" name="new-device" id="new-device" class="form-control">
+                                    </div>
                                 </div>
+                                <br>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="new-device">New Device Model & Storage</label><br>
-                                    <input type="text" name="new-device" id="new-device" class="form-control">
-                                </div>
-                            </div>
-                            <br>
+                            <button class="btn add-line-btn" type="button" id="add-line-btn">Add Line</button>
+
                             <h3>Customer Feedback:</h3>
                             <br>
 
@@ -161,25 +169,29 @@
                                 <label for="name">Did the Sales Representative provide information about the
                                     following:</label><br>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="gift-cards" value="yes" id="opt1">
+                                    <input class="form-check-input" type="checkbox" name="gift-cards" value="yes"
+                                        id="opt1">
                                     <label class="form-check-label" for="opt1">
                                         Gift Cards
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="trade-in-options" value="yes" id="opt2">
+                                    <input class="form-check-input" type="checkbox" name="trade-in-options" value="yes"
+                                        id="opt2">
                                     <label class="form-check-label" for="opt2">
                                         Trade-In Options
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="billing" value="yes" id="opt3">
+                                    <input class="form-check-input" type="checkbox" name="billing" value="yes"
+                                        id="opt3">
                                     <label class="form-check-label" for="opt3">
                                         Billing
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="activation-fee" value="yes" id="opt4">
+                                    <input class="form-check-input" type="checkbox" name="activation-fee" value="yes"
+                                        id="opt4">
                                     <label class="form-check-label" for="opt4">
                                         Activation Fee
                                     </label>
@@ -189,57 +201,67 @@
                             <div class="form-group col-md-6">
                                 <label>Was the Sales Representative Friendly?</label><br>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="sales-rep-friendly" id="radio-yes" value="yes">
+                                    <input class="form-check-input" type="radio" name="sales-rep-friendly"
+                                        id="radio-yes" value="yes">
                                     <label class="form-check-label" for="radio-yes">
-                                      Yes
+                                        Yes
                                     </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="sales-rep-friendly" id="radio-no" value="no">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sales-rep-friendly" id="radio-no"
+                                        value="no">
                                     <label class="form-check-label" for="radio-no">
-                                      No
+                                        No
                                     </label>
-                                  </div>
+                                </div>
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label for="name">How would you rate your experience with the Sales Representative?</label><br>
+                                <label for="name">How would you rate your experience with the Sales
+                                    Representative?</label><br>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-1" value="excellent">
+                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-1"
+                                        value="excellent">
                                     <label class="form-check-label" for="radio-1">
-                                      Excellent
+                                        Excellent
                                     </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-2" value="good">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-2"
+                                        value="good">
                                     <label class="form-check-label" for="radio-2">
-                                      Good
+                                        Good
                                     </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-3" value="average">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-3"
+                                        value="average">
                                     <label class="form-check-label" for="radio-3">
-                                      Average
+                                        Average
                                     </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-4" value="poor">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-4"
+                                        value="poor">
                                     <label class="form-check-label" for="radio-4">
-                                      Poor
+                                        Poor
                                     </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-5" value="unacceptable">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="experience-rating" id="radio-5"
+                                        value="unacceptable">
                                     <label class="form-check-label" for="radio-5">
-                                      Unacceptable
+                                        Unacceptable
                                     </label>
-                                  </div>
+                                </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="comments-suggestions">Please provide any further comments and suggestions:</label>
-                                <textarea class="form-control" name="comments-suggestions" id="comments-suggestions" rows="3"></textarea>
-                              </div>
+                                <label for="comments-suggestions">Please provide any further comments and
+                                    suggestions:</label>
+                                <textarea class="form-control" name="comments-suggestions" id="comments-suggestions"
+                                    rows="3"></textarea>
+                            </div>
 
                             <div class="my-3">
                                 <div class="loading">Loading</div>
