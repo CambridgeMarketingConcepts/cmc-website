@@ -1960,8 +1960,13 @@ section {
   border-color: var(--light-blue);
 }
 
+
 .hiring .php-email-form input {
   height: 44px;
+}
+
+.hiring .php-email-form .form-check-input {
+  height: 1rem;
 }
 
 .hiring .php-email-form textarea {
