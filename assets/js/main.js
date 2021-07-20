@@ -254,20 +254,7 @@
     });
   });
 
-  /**------------ Form Control */
-  // var addLineBtn = select('#add-line-btn');
-  // addLineBtn.on('click', addLine);
-  // function addLine() {
-  //   
-  // }
-
-  // on('click', '#add-line-btn', function(e) {
-  //   // var new_device_info = <input type='text' name='new-device' id='new-device' class='form-control'>
-  //   var new_input = document.createElement("input");
-  //   var deviceInfo = select('#device-info');
-  //   deviceInfo.appendChild(new_input);
-  //   console.log("done");
-  // })
+  /**------------ Form Control ------------*/
 
 var i = 0;
 var original = document.getElementById('device-info');
