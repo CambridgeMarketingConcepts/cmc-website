@@ -254,7 +254,9 @@
     });
   });
 
-  /**------------ Form Control ------------*/
+  /**---------------------- 
+   * Form Control 
+   * ----------------------*/
 
 var i = 0;
 var original = document.getElementById('device-info');
