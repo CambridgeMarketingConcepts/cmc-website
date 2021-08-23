@@ -262,10 +262,12 @@ var i = 0;
 var original = document.getElementById('device-info');
 
 on('click', '#add-line-btn', function duplicate() {
-    console.log("doing it")
     var clone = original.cloneNode(true); // "deep" clone
     clone.id = "device-info" + ++i;
     // or clone.id = ""; if the divs don't need an ID
+    clone.querySelector('#phone-number').value = "";
+    clone.querySelector('#trade-in-device').value = "";
+    clone.querySelector('#new-device').value = "";
     original.parentNode.appendChild(clone);
 })
 
