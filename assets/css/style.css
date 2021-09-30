@@ -2016,3 +2016,41 @@ section {
     transform: rotate(360deg);
   }
 }
+
+
+/*--------------------------------------------------------------
+# Blog Posts
+--------------------------------------------------------------*/
+
+.blog-posts .post-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.blog-posts .img-col {
+  padding: 20px;
+}
+.blog-posts .text-col {
+  padding: 20px;
+}
+
+.blog-posts .post-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-posts .post-box h3 {
+  text-align: left;
+  color: var(--dark-blue);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.blog-posts .post-box span {
+  font-style: italic;
+}
+ 
+.blog-posts .post-box .posted-date {
+  text-align: right;
+}
