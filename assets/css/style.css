@@ -1949,19 +1949,20 @@ section {
   padding-bottom: 8px;
 }
 
-.hiring .php-email-form input, .hiring .php-email-form textarea {
+.hiring .php-email-form input, .hiring .php-email-form textarea, .hiring .php-email-form select {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
+  border-color:rgba(0, 0, 0, 0.1);
 }
 
-.hiring .php-email-form input:focus, .hiring .php-email-form textarea:focus {
+.hiring .php-email-form input:focus, .hiring .php-email-form textarea:focus, .hiring .php-email-form select:focus {
   border-color: var(--light-blue);
 }
 
 
-.hiring .php-email-form input {
+.hiring .php-email-form input, .hiring .php-email-form select {
   height: 44px;
 }
 
@@ -1969,7 +1970,7 @@ section {
   height: 1rem;
 }
 
-.hiring .php-email-form textarea {
+.hiring .php-email-form textarea, .hiring .php-email-form select {
   padding: 10px 12px;
 }
 
