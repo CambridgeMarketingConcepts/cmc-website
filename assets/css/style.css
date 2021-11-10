@@ -1432,6 +1432,16 @@ section {
   color: #6182ba;
 }
 
+.contact .info button {
+  color: #37517e;
+}
+
+.contact .info button.active, .contact .info button:focus {
+  background-color: var(--light-blue);
+  color: white;
+  margin-bottom: 10px;
+}
+
 .contact .info .email p {
   padding-top: 5px;
 }
