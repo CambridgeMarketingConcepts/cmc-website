@@ -26,6 +26,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Jost", sans-serif;
 }
 
+.btn-light-blue {
+  background-color: var(--light-blue);
+  color: white;
+}
+
+.btn-light-blue-border {
+  border-color: var(--light-blue);
+  color: var(--light-blue);
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1831,11 +1840,11 @@ section {
 # Hiring
 --------------------------------------------------------------*/
 
-.hiring .open-positions h3 {
+.hiring .info .open-positions h3 {
   font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #37517e;
+  margin-bottom: 2rem;
+  color: var(--light-blue);
+  text-decoration: underline;
 }
 
 .hiring .open-positions ul {
@@ -1847,6 +1856,7 @@ section {
 .hiring .open-positions li{
   font-size: 14px;
   color: #37517e;
+  text-decoration: underline;
 }
 
 .hiring .info {
@@ -1877,6 +1887,9 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
+  color: #37517e;
+}
+.hiring .info h3 {
   color: #37517e;
 }
 
@@ -2038,6 +2051,10 @@ section {
   padding: 10px;
 }
 
+.blog-posts .job-category-title {
+
+}
+
 .blog-posts .img-col {
   padding: 20px;
 }
@@ -2064,4 +2081,66 @@ section {
  
 .blog-posts .post-box .posted-date {
   text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Job Posts
+--------------------------------------------------------------*/
+.job-posts ,.job-category {
+  margin-bottom: 20px;
+}
+
+.job-posts .post-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.job-posts .job-category-title {
+  text-align: left;
+  color: var(--dark-blue);
+  font-size: 2rem;
+}
+
+.job-posts .post-box span {
+  font-style: italic;
+}
+
+.job-posts .post-box .btn-1 {
+  background-color: var(--light-blue);
+  color: white;
+}
+.job-posts .post-box .btn-2 {
+  border-color: var(--light-blue);
+  color: var(--light-blue);
+  margin-left: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Job Descriptions
+--------------------------------------------------------------*/
+.job-description .post-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.job-description .post-box h3 {
+  text-align: left;
+  color: var(--light-blue);
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+.job-description .modal-body li {
+  font-size: 1rem;
+  color: red;
+}
+
+.job-description .post-box span {
+  font-style: italic;
 }
